@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Cursor with Kursor.js</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: "Courier New", monospace;
+            color: #c7254e;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Custom Cursor with Kursor.js</h1>
+
+    <p>This project integrates <strong>Kursor.js</strong>, a lightweight JavaScript library for adding custom cursors to websites.</p>
+
+    <h2>🚀 Features</h2>
+    <ul>
+        <li>Customizable cursor styles</li>
+        <li>Lightweight and easy to implement</li>
+        <li>Supports different cursor effects</li>
+    </ul>
+
+    <h2>📌 Installation</h2>
+
+    <h3>1️⃣ Add Kursor.js via CDN</h3>
+    <p>Insert the following lines into your HTML file inside the <code>&lt;head&gt;</code> section:</p>
+    
+    <pre><code>&lt;!-- Kursor.js CSS --&gt;
+&lt;link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css"&gt;
+
+&lt;!-- Kursor.js JavaScript --&gt;
+&lt;script src="https://unpkg.com/kursor/dist/kursor.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+    <h3>2️⃣ Initialize Kursor.js</h3>
+    <p>Place this script before the closing <code>&lt;/body&gt;</code> tag:</p>
+
+    <pre><code>&lt;script&gt;
+  new kursor({
+    type: 1,
+    color: '#000000',
+    removeDefaultCursor: false,
+  });
+&lt;/script&gt;
+</code></pre>
+
+    <h2>🎨 Cursor Types</h2>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Effect</th>
+        </tr>
+        <tr>
+            <td><code>1</code></td>
+            <td>Basic cursor</td>
+        </tr>
+        <tr>
+            <td><code>2</code></td>
+            <td>Bouncing cursor</td>
+        </tr>
+        <tr>
+            <td><code>3</code></td>
+            <td>Blurred effect</td>
+        </tr>
+        <tr>
+            <td><code>4</code></td>
+            <td>Growth cursor</td>
+        </tr>
+        <tr>
+            <td><code>5</code></td>
+            <td>Ring cursor</td>
+        </tr>
+    </table>
+
+    <h2>⚙️ Customization Options</h2>
+    <table>
+        <tr>
+            <th>Option</th>
+            <th>Description</th>
+            <th>Default Value</th>
+        </tr>
+        <tr>
+            <td><code>type</code></td>
+            <td>Cursor effect type (1-5)</td>
+            <td><code>1</code></td>
+        </tr>
+        <tr>
+            <td><code>color</code></td>
+            <td>Cursor color (HEX)</td>
+            <td><code>#000000</code></td>
+        </tr>
+        <tr>
+            <td><code>removeDefaultCursor</code></td>
+            <td>Hide default browser cursor (<code>true</code> / <code>false</code>)</td>
+            <td><code>false</code></td>
+        </tr>
+    </table>
+
+    <h2>📜 License</h2>
+    <p>This project uses the <strong>MIT License</strong>.</p>
+
+    <hr>
+    <p><strong>Enjoy your custom cursor! 🎉</strong><br>If you find this useful, ⭐ <strong>Star</strong> this repository on GitHub!</p>
+
+</body>
+</html>
