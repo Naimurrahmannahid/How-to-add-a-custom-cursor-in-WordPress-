@@ -1,11 +1,30 @@
-# How to add a custom cursor in WordPress?
 
-Enhance your website's user experience with Kursor.js, a lightweight JavaScript library for adding custom cursors. Easily customize cursor styles, colors, and effects for a unique interactive feel.
+# Custom Cursor with Kursor.js
 
-## সঠিক কোড:
+This project integrates **Kursor.js**, a lightweight JavaScript library for adding custom cursors to websites.
 
+## 🚀 Features
+- Customizable cursor styles
+- Lightweight and easy to implement
+- Supports different cursor effects
+
+## 📌 Installation
+
+### 1️⃣ Add Kursor.js via CDN
+Insert the following lines into your HTML file inside the `<head>` section:
+
+```html
+<!-- Kursor.js CSS -->
 <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+
+<!-- Kursor.js JavaScript -->
 <script src="https://unpkg.com/kursor/dist/kursor.min.js"></script>
+```
+
+### 2️⃣ Initialize Kursor.js
+Place this script before the closing `</body>` tag:
+
+```html
 <script>
   new kursor({
     type: 1,
@@ -13,30 +32,31 @@ Enhance your website's user experience with Kursor.js, a lightweight JavaScript 
     removeDefaultCursor: false,
   });
 </script>
+```
 
-## সমস্যা এবং সমাধান:
+## 🎨 Cursor Types
+You can change the cursor effect by modifying the `type` value (1-5):
 
-আপনার দেওয়া JavaScript ফাইলের লিংক ভুল ছিল (/dist/kursor.js), যা পরিবর্তন করে /dist/kursor.min.js করতে হবে।
-লাইব্রেরি লোড না হলে কাজ করবে না:
+| Type | Effect |
+|------|--------|
+| `1`  | Basic cursor |
+| `2`  | Bouncing cursor |
+| `3`  | Blurred effect |
+| `4`  | Growth cursor |
+| `5`  | Ring cursor |
 
-Kursor.js সঠিকভাবে লোড না হলে কোড কাজ করবে না।
-কনসোল (F12 > Console) এ error দেখলে নিশ্চিত করুন যে লাইব্রেরিটি লোড হচ্ছে কিনা।
-ডিফল্ট কার্সর রিমুভ করতে চাইলে:
+## ⚙️ Customization Options
 
-new kursor({
-  type: 1,
-  color: '#000000',
-  removeDefaultCursor: true, // ডিফল্ট কার্সর রিমুভ করবে
-});
+| Option | Description | Default Value |
+|--------|------------|--------------|
+| `type` | Cursor effect type (1-5) | `1` |
+| `color` | Cursor color (HEX) | `#000000` |
+| `removeDefaultCursor` | Hide default browser cursor (`true` / `false`) | `false` |
 
-## Kursor.js এর বিভিন্ন Type:
+## 📜 License
+This project uses the **MIT License**.
 
-আপনি type: 1 ব্যবহার করেছেন, যেখানে type এর মান ১-৫ পর্যন্ত দেওয়া যায়:
+---
 
-type: 1 → বেসিক কার্সর
-type: 2 → বাউন্সিং কার্সর
-type: 3 → ব্লার ইফেক্ট
-type: 4 → গ্রোথ কার্সর
-type: 5 → রিং কার্সর
-
-আপনার যদি আরও কাস্টমাইজেশন দরকার হয়, জানাতে পারেন! [WordPress Naimur](https://github.com/Naimurrahmannahid/)
+**Enjoy your custom cursor! 🎉**  
+If you find this useful, ⭐ **Star** this repository on GitHub!
